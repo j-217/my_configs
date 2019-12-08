@@ -1,27 +1,3 @@
-" My Settings
-set encoding=utf-8
-set number
-syntax on
-set autoindent
-set smartindent
-set expandtab
-filetype on
-filetype indent on
-" set spell spelllang=en_us
-set mouse=a
-set showcmd
-set softtabstop=4
-set shiftwidth=4
-set tabstop=4
-set cursorline
-set ruler
-set showmatch
-set wildmenu
-set history=1000
-colorscheme snazzy
-set t_Co=256
-set hlsearch
-
 " -----  Vundle -----
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -51,3 +27,27 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " -----  Vundle End -----
+
+" My Settings
+set encoding=utf-8
+set number
+syntax on
+set autoindent
+set smartindent
+set expandtab
+filetype on
+filetype indent on
+" set spell spelllang=en_us
+set mouse=a
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4
+set cursorline
+set ruler
+set showmatch
+set wildmenu
+set history=1000
+colorscheme snazzy
+set t_Co=256
+set hlsearch
+set showcmd
