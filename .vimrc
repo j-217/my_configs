@@ -23,6 +23,27 @@ let g:airline#extensions#tabline#enabled=1
 " nerdtree
 Plugin 'scrooloose/nerdtree'
 
+" YouCompleteMed
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+let g:ycm_key_invoke_completion = '<c-z>'
+set completeopt=menu,menuone
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_seed_identifiers_with_syntax = 1 
+nnoremap <c-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_filetype_whitelist = {
+			\ "c":1,
+			\ "cpp":1,
+			\ "objc":1,
+			\ "sh":1,
+			\ "zsh":1,
+            \ "bash":1,
+			\ }
+let g:ycm_semantic_triggers =  {
+			\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+			\ 'cs,lua,javascript': ['re!\w{2}'],
+			\ }
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -51,3 +72,4 @@ colorscheme snazzy
 set t_Co=256
 set hlsearch
 set showcmd
+" filetype plugin on
