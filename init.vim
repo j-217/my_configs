@@ -3,6 +3,7 @@ call plug#begin('C:/App/NeoVim/plugin')
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim'
+Plug 'Yggdroot/LeaderF'
 
 call plug#end()
 
@@ -39,6 +40,8 @@ set hlsearch
 set showcmd
 set foldmethod=indent
 set foldlevel=99
+
+set tags=tags;
 
 " no flasing on git bash
 set vb t_vb=
