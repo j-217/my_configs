@@ -83,3 +83,6 @@ set hlsearch
 set showcmd
 set foldmethod=indent
 set foldlevel=99
+
+" no flasing on git bash
+set vb t_vb=
